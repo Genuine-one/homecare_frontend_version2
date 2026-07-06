@@ -33,7 +33,7 @@ class ApiConstants {
   /// Fallback for Android / iOS / ngrok tunnels.
   /// Replace with your current ngrok URL when testing on a real device.
   static const String _ngrokUrl =
-      'http://127.0.0.1:8001/api/v1';
+      'https://homecare-backend-version2.vercel.app/api/v1';
 
   static String get _platformDefault {
     // Web: use localhost (Chrome allows localhost even with http://).
