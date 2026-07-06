@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e
 
-git clone https://github.com/flutter/flutter.git --depth 1 -b stable
+echo "Installing Flutter..."
 
-export PATH="$PATH:`pwd`/flutter/bin"
+git clone --depth 1 --branch stable https://github.com/flutter/flutter.git flutter
 
-flutter doctor
+export PATH="$PATH:$(pwd)/flutter/bin"
+
+echo "Flutter version"
+flutter --version
 
 flutter config --enable-web
 
