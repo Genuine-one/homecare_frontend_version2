@@ -21,7 +21,7 @@ class ApiConstants {
   ApiConstants._();
 
   // ── Shared-prefs key ──────────────────────────────────────────────────────
-  static const String _baseUrlKey = 'kle_api_base_url';
+  static const String _baseUrlKey = 'https://homecare-backend-version2.vercel.app';
 
   // ── In-memory cache (set during app init) ─────────────────────────────────
   static String _cachedBaseUrl = _platformDefault;
